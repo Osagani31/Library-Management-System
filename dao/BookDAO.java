@@ -144,6 +144,11 @@ public class BookDAO {
     public boolean reserveBook(int bookId, int userId) {
         Connection conn = null;
         try {
+            // Prevent duplicate reservation by the same user for the same book
+            dao.ReservationDAO reservationDAO = new dao.ReservationDAO();
+            if (reservationDAO.hasActiveReservation(userId, bookId)) {
+                return false;
+            }
             conn = DBConnection.getConnection();
             conn.setAutoCommit(false);
 
