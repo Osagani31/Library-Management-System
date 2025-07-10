@@ -253,31 +253,27 @@ function displayLiveSearchResults(books, container) {
         container.innerHTML = '<div class="p-3 text-muted">No books found matching your search</div>';
         return;
     }
-    
+
     // Build results HTML
-    let html = '<div class="list-group">';
-    
+    let html = '';
     books.forEach(book => {
-        const availability = book.available ? 
-            '<span class="badge bg-success">Available</span>' : 
-            '<span class="badge bg-danger">Reserved</span>';
-            
+        const availability = book.available
+            ? '<span class="badge bg-success">Available</span>'
+            : '<span class="badge bg-danger">Reserved</span>';
+
         html += `
-            <a href="book?action=details&bookId=${book.bookId}" class="list-group-item list-group-item-action">
-                <div class="d-flex justify-content-between align-items-center">
-                    <div>
-                        <h6 class="mb-1">${book.title}</h6>
-                        <small class="text-muted">by ${book.author}</small>
-                    </div>
-                    <div>
-                        ${availability}
-                    </div>
+            <div class="live-search-result p-2 mb-1 rounded d-flex align-items-center" style="background: #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+                <div>
+                    <div class="fw-bold" style="font-size: 1.1rem;">${book.title}</div>
+                    <div class="text-muted" style="font-size: 0.95rem;">by ${book.author}</div>
                 </div>
-            </a>
+                <div class="ms-auto">
+                    ${availability}
+                </div>
+            </div>
         `;
     });
-    
-    html += '</div>';
+
     container.innerHTML = html;
     container.style.display = 'block';
 }
