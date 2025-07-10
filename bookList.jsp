@@ -256,7 +256,7 @@
                                 Book book = bookDAO.getBookById(reservation.getBookId());
                                 
                                 // Get user details if admin view
-                                User user = null;
+                                user = null;
                                 if (isAdmin) {
                                     user = userDAO.getUserById(reservation.getUserId());
                                 }
