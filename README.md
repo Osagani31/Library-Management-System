@@ -58,6 +58,7 @@ Here are some snapshots showcasing the key features of the Library Management Sy
 | 🧾 **Reservation History**       | Reserved Books: ![Reserved](https://github.com/user-attachments/assets/0de080b9-9af9-4d74-aa32-e130737549a1)<br>Active Reservations: ![Active](https://github.com/user-attachments/assets/ed8b2a85-a5b4-49d1-b792-f539091437e3) |
 | ⚠️ **Access Denied/Error Page** | ![Access Denied](https://github.com/user-attachments/assets/c2c60c4e-ef37-4af1-9111-dbefbf8b8e00) |
 | ➕ **Add Book (Admin)**          | ![Add Book 1](https://github.com/user-attachments/assets/25a679b0-0650-4f26-98b4-79398cde9625)<br>![Add Book 2](https://github.com/user-attachments/assets/7eaad84d-a11a-40f2-8ed2-0a3085dbdc03) |
+|🧑‍💼 **Manage Users**  |![image](https://github.com/user-attachments/assets/c0456031-5545-48b8-871f-d29f8b67f9f5)|
 
 
 
