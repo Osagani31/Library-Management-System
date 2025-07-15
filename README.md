@@ -62,8 +62,6 @@ Here are some snapshots showcasing the key features of the Library Management Sy
 
 
 
-
-
 ## 🗄️ Database Schema
 
 - MySQL schema includes:
@@ -72,6 +70,10 @@ Here are some snapshots showcasing the key features of the Library Management Sy
   - **Triggers & Procedures** to maintain data consistency
 
 ---
+## 🎥 Demo Video
+
+[![Watch the demo](https://img.youtube.com/vi/cAVdCHcvxuA/maxresdefault.jpg)](https://www.youtube.com/watch?v=cAVdCHcvxuA)
+
 ## 🛠️ Setup & Installation
 
 ### 🔧 Prerequisites
